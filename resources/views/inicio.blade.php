@@ -9,7 +9,7 @@
     <h6>Para eventos, comercios e instituciones. Contáctanos para más información.</h6>
     <a href="https://wa.me/543834534010" target="_blank" rel="noopener noreferrer">
         <button type="button" class="btn btn-primary">
-            <i class="fab fa-whatsapp"></i> WhatsApp
+            <i class="fab fa-whatsapp"></i> Consultanos
         </button>
     </a>
 </div>
@@ -23,9 +23,20 @@
         <div class="services-modal">
             <div class="services-content">
                 <span class="close-modal" onclick="closeServicesMenu()">&times;</span>
-                <h2 class="modal-title">Servicios Profesionales</h2>
+                <h2 class="modal-title">Servicios</h2>               
 
-                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-header">
+                            <i class="fas fa-envelope-open-text service-icon"></i>
+                            <h3>Invitaciones Digitales</h3>
+                        </div>
+                        <p>Diseños exclusivos para cumpleaños y eventos corporativos.</p>
+                        <div class="service-footer">
+                            <a href="/proyectos/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                     <div class="services-list">
                     <div class="service-item">
                         <div class="service-header">
                             <i class="fas fa-laptop-code service-icon"></i>
@@ -34,17 +45,6 @@
                         <p>Sitios web profesionales, responsivos y optimizados para SEO.</p>
                         <div class="service-footer">
                             <a href="/proyectos/paginas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-header">
-                            <i class="fas fa-envelope-open-text service-icon"></i>
-                            <h3>Invitaciones Digitales</h3>
-                        </div>
-                        <p>Diseños exclusivos para bodas, cumpleaños y eventos corporativos.</p>
-                        <div class="service-footer">
-                            <a href="/proyectos/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
 

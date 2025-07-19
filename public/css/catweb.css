@@ -182,19 +182,14 @@
         .close-modal {
             position: absolute;
             top: 1.5rem;
-            right: 2rem;
-            color: var(--dark);
+            right: 2rem;            
             font-size: 2rem;
             font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s;
+            cursor: pointer;            
             opacity: 0.7;
-        }
-
-        .close-modal:hover {
-            opacity: 1;
-            transform: rotate(90deg);
-        }
+            z-index: 1000; /* 👈 aseguramos que esté sobre otros elementos */
+    }
+        
 
         /* Lista de servicios */
         .services-list {
@@ -401,4 +396,53 @@
             .lead span {
                 font-size: 1.5rem;
             }
+        }
+
+        /* Imagen y video en landing tarjetas */
+        .img-fluid.rounded, 
+        .embed-responsive.rounded, 
+        video.rounded {
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Video responsivo directo */
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Texto descriptivo */
+        h4 {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        h5 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        h5::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+            bottom: -0.3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
         }
