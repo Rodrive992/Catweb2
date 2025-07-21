@@ -46,7 +46,7 @@
                     </div>
                     <p>Diseños exclusivos para cumpleaños y eventos corporativos.</p>
                     <div class="service-footer">
-                        <a href="/proyectos/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                        <a href="/servicios/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                         </div>
                         <p>Sitios web para comercios y eventos especiales.</p>
                         <div class="service-footer">
-                            <a href="/proyectos/paginas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                            <a href="/servicios/paginas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -69,7 +69,7 @@
                         </div>
                         <p>Soluciones personalizadas para gestión de negocios e instituciones.</p>
                         <div class="service-footer">
-                            <a href="/proyectos/sistemas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                            <a href="/servicios/sistemas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>

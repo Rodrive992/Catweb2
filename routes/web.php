@@ -7,14 +7,14 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::get('/proyectos/paginas-web', function () {
+Route::get('/servicios/paginas-web', function () {
     return view('proyectos.paginas_web');
 });
 
-Route::get('/proyectos/tarjetas', function () {
+Route::get('/servicios/tarjetas', function () {
     return view('proyectos.tarjetas');
 });
 
-Route::get('/proyectos/sistemas-web', function () {
+Route::get('/servicios/sistemas-web', function () {
     return view('proyectos.sistemas_web');
 });

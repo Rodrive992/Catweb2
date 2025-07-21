@@ -25,10 +25,10 @@
     <img src="{{ asset('images/flyer-ejemplo.jpeg') }}" alt="Flyer invitación digital" class="img-fluid rounded shadow-sm">
 </div>
 
-<!-- Carrusel de videos -->
-<div class="container main-card my-4 p-4">
+    <!-- Carrusel de videos -->
+    <div class="container main-card my-4 p-4">
     <h5 class="mb-3 font-weight-bold">Tarjetas Animadas</h5>
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-touch="false">
+    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-touch="false" data-interval="false">
         <div class="carousel-inner rounded shadow-sm">
 
             <div class="carousel-item active">
@@ -76,7 +76,7 @@
                     </div>
                     <p>Diseños exclusivos para cumpleaños y eventos corporativos.</p>
                     <div class="service-footer">
-                        <a href="/proyectos/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                        <a href="/servicios/tarjetas" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                         </div>
                         <p>Sitios web para comercios y eventos especiales.</p>
                         <div class="service-footer">
-                            <a href="/proyectos/paginas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                            <a href="/servicios/paginas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@
                         </div>
                         <p>Soluciones personalizadas para gestión de negocios e instituciones.</p>
                         <div class="service-footer">
-                            <a href="/proyectos/sistemas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
+                            <a href="/servicios/sistemas-web" class="service-link">Más información <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -121,4 +121,20 @@
         </div>
     </div>
 </div>
+<script>
+    // Al iniciar: detener autoplay en todos los videos
+    document.querySelectorAll('#videoCarousel video').forEach(video => {
+        video.pause();
+    });
+
+    // Escuchar cuando cambia el slide
+    $('#videoCarousel').on('slide.bs.carousel', function (e) {
+        // Buscar video en el slide actual y pausarlo
+        let activeSlide = $(this).find('.carousel-item.active video').get(0);
+        if (activeSlide) {
+            activeSlide.pause();
+            activeSlide.currentTime = 0;
+        }
+    });
+</script>
 @endsection
