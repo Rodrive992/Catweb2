@@ -28,7 +28,7 @@
 <!-- Carrusel de videos -->
 <div class="container main-card my-4 p-4">
     <h5 class="mb-3 font-weight-bold">Tarjetas Animadas</h5>
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+    <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-touch="false">
         <div class="carousel-inner rounded shadow-sm">
 
             <div class="carousel-item active">
@@ -115,7 +115,7 @@
                         </a>
                     </div>
                     <p class="contact-info"><i class="fas fa-phone-alt"></i> Teléfono: 3834-534010</p>
-                    <p class="contact-info"><i class="fas fa-phone-alt"></i> Teléfono: 3834-534010</p>
+                    <p class="contact-info"><i class="fas fa-phone-alt"></i> Teléfono: 3834-723960</p>
                 </div>
             </div>
         </div>
