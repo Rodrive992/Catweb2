@@ -17,12 +17,38 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    .home-button {
+        position: fixed;
+        top: 35px;
+        right: 25px;
+        z-index: 1100;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #f06856f5;
+        border-radius: 50%;
+        padding: 10px 12px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+        background-color: #f18767ff;
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
 </head>
 
 <body onload="loading()">
 
     <div id="loader"></div>
     <div class="background-image"></div>
+
+    <!-- Botón Home fijo arriba a la derecha -->
+    <a href="{{ url('/') }}" class="home-button" title="Inicio">
+        <i class="fas fa-home"></i>
+    </a>
 
     <div id="page" class="animate">
         @yield('content')
